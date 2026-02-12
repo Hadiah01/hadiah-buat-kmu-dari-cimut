@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pesan Buat Kamu</title>
+  <link rel="stylesheet" href="confes.css">
+</head>
+<body>
+
+<audio id="background-music" src="musik surat cinta.mp3"></audio>
+
+<!-- LOADING SCREEN -->
+<div id="loading" class="loading hidden">
+  <div class="loaderBar"></div>
+  <p class="loading-text">Membuka pesan…</p>
+</div>
+
+<!-- POPUP 0 -->
+<div id="popup0" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 1 (SFILE.MOBI).gif">
+    <p>Silahkan login untuk membuka pesan! 😊</p>
+    <input id="nameInput" type="text" placeholder="Tulis Nama Panggilan Mu..." />
+  </div>
+  <div class="popup-footer">
+    <button onclick="saveName()">Lanjut</button>
+  </div>
+</div>
+
+<!-- POPUP 1 -->
+<div id="popup1" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 1 (SFILE.MOBI).gif">
+    <h3 id="typing-text"
+       data-text="Hayy {nama}… aku cuma pengenn ngomong setitikk aee. Mogaa {nama} gelem baca nganti rampung yaa…">
+    </h3>
+  </div>
+  <div class="popup-footer">
+    <button onclick="showNextPopup('popup1','popup2','typing-text-2','typing-text-3')">
+      Ngomong apa?
+    </button>
+  </div>
+</div>
+
+<!-- POPUP 2 -->
+<div id="popup2" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 36 (SFILE.MOBI).gif">
+    <h3 id="typing-text-2"
+        data-text="Sejujuree akuu wes suwe nyimpen rasa ikii."></h3>
+    <h3 id="typing-text-3"
+        data-text="Saben ono kowe {nama}, atiku rasane ayemm lann tentremm 👉👈."></h3>
+  </div>
+  <div class="popup-footer">
+    <button onclick="showNextPopup('popup2','popup3','typing-text-4')">
+      Jujur aku yo nduwe rasa sing podoo 🥺
+    </button>
+  </div>
+</div>
+
+<!-- POPUP 3 -->
+<div id="popup3" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 15 (SFILE.MOBI).gif">
+    <h3 id="typing-text-4"
+        data-text="Aku ora njaluk opo-opo. Aku mung pengen luwih cedhak karo kowe {nama}">
+    </h3>
+  </div>
+
+  <div class="popup-footer popup-footer-relative">
+    <button onclick="showNextPopup('popup3','popup4','typing-text-5')">
+      Ayok, aku yo ho'o
+    </button>
+
+    <button id="btnNo" class="btn-kabur" onclick="handleNoClick()">
+  Aku durung siap
+</button>
+  </div>
+</div>
+
+<!-- POPUP 4 -->
+<div id="popup4" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 2 (SFILE.MOBI).gif">
+    <h3 id="typing-text-5"
+        data-text="Suwunn wess gelem nerima rasa ikii 🤍"></h3>
+  </div>
+  <div class="popup-footer">
+    <button onclick="showNextPopup('popup4','popup5','typing-text-6','typing-text-7')">
+      Aku sayang kowe
+    </button>
+  </div>
+</div>
+
+<!-- POPUP 5 -->
+<div id="popup5" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 41 (SFILE.MOBI).gif">
+    <h3 id="typing-text-6"
+        data-text="Mugo iki dadi awal sing apik kanggo awake dhewe."></h3>
+    <h3 id="typing-text-7"
+        data-text="Alon-alon, tapi pasti lan tenanan 🤍"></h3>
+  </div>
+  <div class="popup-footer">
+    <button id="wa-btn" onclick="openWhatsApp()">Aamiin</button>
+  </div>
+</div>
+
+<!-- POPUP RAHASIA -->
+<div id="popup6" class="popup hidden">
+  <div class="popup-header">Message</div>
+  <div class="popup-content">
+    <img src="Stiker 32 (SFILE.MOBI).gif">
+    <h3 id="typing-text-8"
+        data-text="
+Aku ngerti kok, 
+nek kowe masih butuh wektu. 
+Makasih yaa wis jujur🖤"></h3>
+  </div>
+  <div class="popup-footer">
+    <button id="wa-code-btn" onclick="openWhatsAppCode()">Peluk Virtual 🤍</button>
+  </div>
+</div>
+
+
+<!-- TOMBOL MULAI -->
+<button id="show-popup-btn" class="show-popup-btn" onclick="startStory()">
+  📩
+  <p>Pesan belum di baca!</p>
+</button>
+
+<script src="confes.js"></script>
+</body>
+</html>
