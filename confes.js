@@ -146,7 +146,7 @@ function handleNoClick() {
 /* ================= WHATSAPP OTOMATIS ================= */
 function openWhatsApp() {
   const phoneNumber = "6281217285500"; // ganti nomor WA tujuan
-  const websiteLink = "https://contohwebsite.com"; // ganti link websitemu
+  const websiteLink = "https://hadiah01.github.io/hadiah-buat-kmu-dari-cimut/"; // ganti link websitemu
   const message = `aku menerima mu dan aku mau kita seriusan, dan bukan cuma animasi sebuah web aja, berani berbuat harus berani bertanggung jawab, jan cuma bikin baper doang😏. 
 link: ${websiteLink}`;
   
@@ -175,7 +175,7 @@ async function showNextPopup(current, next, ...typingIds) {
 function openWhatsAppCode() {
   const phoneNumber = "6281217285500"; // ganti dengan nomor WA tujuan
   const secretCode = "1x3u"; // kode rahasia
-  const websiteLink = "https://contohwebsite.com"; // ganti link websitemu
+  const websiteLink = "https://hadiah01.github.io/hadiah-buat-kmu-dari-cimut/"; // ganti link websitemu
   
   const message = `(${secretCode})
 Terimakasih telah membuka website ini, yang mau pesen web kaya gini bisa chat nomer ${phoneNumber}
