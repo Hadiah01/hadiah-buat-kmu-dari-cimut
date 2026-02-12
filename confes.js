@@ -178,7 +178,7 @@ function openWhatsAppCode() {
   const websiteLink = "https://hadiah01.github.io/hadiah-buat-kmu-dari-cimut/"; // ganti link websitemu
   
   const message = `(${secretCode})
-Terimakasih telah membuka website ini, yang mau pesen web kaya gini bisa chat nomer ${phoneNumber}
+Terimakasih telah membuka website ini, yang mau pesen web kaya gini bisa chat nomer 083824063521
 link: ${websiteLink}`;
   
   const encodedMessage = encodeURIComponent(message);
